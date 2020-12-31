@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="Home.html">
+  <link rel="stylesheet" type="text/css" href="login.html">
+  <link rel="stylesheet" type="text/css" href="Hakkımda.html">
+  <link rel="stylesheet" type="text/css" href="iletisim.html">
+  <link rel="stylesheet" type="text/css" href="Memleketim.html">
+  <title>Hakkımda</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info ">
+    <div class="container">
+      <a href="Home.html" class="navbar-brand"> <strong> Kişisel Blog </strong></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuac">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menuac">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a href="Home.html" class="nav-link">AnaSayfa</a>
+          </li>
+          <li class="nav-item active">
+            <a href="#" class="nav-link">Hakkımda</a>
+          </li>
+          <a href="Memleketim.html" class="nav-link">Memleketim</a>
+        </li>      
+      </li>      
+      <li class="nav-item ">
+        <a href="iletisim.html" class="nav-link">İletişim</a>
+      </li>
+    </ul>
+    <form class="form-inline ml-auto" name="form" id="form">
+      <p class="mr-2 my-1">Kullanıcı Bilgileri:</p>
+      <input type="text" class="form-control my-1 mr-2" name="id" id="id" value="">
+      <input type="password" class="form-control mr-2" name="sifre" id="sifre" value="">
+      <button type="button" onclick="a()" class="btn btn-dark my-2 my-sm-0" id="Btn">Giriş</button>
+      <p id="resultFalse" class="alert alert-danger" style="display: none;"></p>
+      <p id="resultTrue" class="alert alert-success" style="display: none;"></p>
+    </form>
+  </div>
+</nav>
+<script type="text/javascript">
+  function a()
+  {
+    var kullanıcı_adı="b191210080";
+    var kullanıcı_sifre="123";
+    var alınan_kullanıcı_adı = document.getElementById("id").value;
+    var alınan_sifre = document.getElementById("sifre").value;
+    if(kullanıcı_adı==alınan_kullanıcı_adı&&kullanıcı_sifre==alınan_sifre)
+    {
+      alert("Hoşgeldin b191210080");
+      window.location = "Home.html";
+    }
+    else
+    {
+      alert("Girilen Bilgiler Hatalıdır.");
+    }
+  }
+</script>
+<center><p class="mt-4"><h2>HOBİLERİM</h2></p></center>
+<hr><br><br>
+<div class="container">   
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card">
+        <center><img class="img-fluid" width="225" src="bilgisayaroyun.jpg"></center>
+        <div class="card-body">
+          <h4 class="card-title">Oyun Oynamak</h4>
+          <p class="card-text">Her gün en az 1-2 saat oyun oynarım ve bunu 12-13 senedir yapıyorum.</p>
+        </div>          
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <center><img class="img-fluid" width="200" src="dizifilmizlemek.jpg"></center>
+        <div class="card-body">
+          <h4 class="card-title">Dizi-Film İzlemek</h4>
+          <p class="card-text">Dizi film izleme sevgisini bana abim kazandırdı onunla genelde her gün bir şeyler izleriz. </p>
+        </div>          
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <center><img class="img-fluid" width="180" src="keman1.jpg"></center>
+        <div class="card-body">
+          <h4 class="card-title">Keman</h4>
+          <p class="card-text">Müzik aletlerine büyük ilgim vardı ben de kemanı seçtim. </p>          
+        </div>          
+      </div>
+    </div><br><br>
+    <div class="col-md-4">
+      <div class="card">
+        <center><img class="img-fluid" width="200" src="koşmak.jpg"></center>
+        <div class="card-body">
+          <h4 class="card-title">Koşmak</h4>
+          <p class="card-text">Sakaryadayken pek yapamasamda izmirdeyken her akşam koşuya çıkarım.(karantinada çıkmıyorum) </p>
+        </div>          
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <center><img class="img-fluid" width="180" src="muzikdinlemek.jpg"></center>
+        <div class="card-body">
+          <h4 class="card-title">Müzik Dinlemek</h4>
+          <p class="card-text">Müzik dinlemeyi çok severim 2 dakikalık bir iş bile yapacak olsam kulaklığımı takar müzik dinlerim. </p>
+        </div>          
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <center><img class="img-fluid" width="170" src="yemekyapmak.jpg"></center>
+        <div class="card-body">
+          <h4 class="card-title">Yemek Yapmak</h4>
+          <p class="card-text">Yemek yapmayı çok seviyorum küçüklüğümden beri her türlü yemeği yapabilirim.</p>         
+        </div>          
+      </div>
+    </div>
+  </div>
+</div>
+<br><br>
+<center><p class="mt-4"><h2>Özgeçmişim</h2></p></center><hr><br>
+<div class="container">
+
+  <div class="row">
+    <div class="rounded-circle img-fluid" style="width: 250px; height: 250px; background-color: grey;" ><img class="rounded-circle" style="width: 250px;height: 250px;" src="kendim1.jpeg">
+    </div> 
+    <div class="col-md-9 media-body"><br><br>
+      <p>Ben izmirde 2000 yılında konakta doğdum. 20 yaşındayım 2006 senesinde anaokuluna başladım böbrek rahatsızlığımdan dolayı bırakmak zorunda kaldım sonra ilkokula başladım ilkokuldan  8. sınıfa kadar halk oyunları gösterilerine katıldım müzik korosuna katıldım çeşitli farklı faaliyetlerde de bulundum. ondan sonra Melih Tunçay İlkokulunda okudum ancak ben okurken 4+4+4 sistemi gelince bizim okulda öğretmenler gidip geldi karışık bir durum oldu sonuç olarak mezun oldum. liseyi izmirde Mehmet Akif ERSOY anadolu lisesinde okudum ondan sonra da şu anda  Sakarya üniversitesinde bilgisayar mühendisliği 1. sınıf öğrencisiyim.</p>
+    </div>
+  </div>
+  <br><br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table table-striped  thead-inverse ">
+          <thead >
+            <tr>
+              <th>#</th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td>Adı:</td>
+              <td>Mustafa Burak</td>            
+            </tr>   
+            <tr>
+              <td></td>
+              <td>Soyadı:</td>
+              <td>AYDIN</td>            
+            </tr>  
+            <tr>
+              <td></td>
+              <td>Yaş:</td>
+              <td>20</td>            
+            </tr>  
+            <tr>
+              <td></td>
+              <td>Memleket:</td>
+              <td>Trabzon</td>            
+            </tr>  
+            <tr>
+              <td></td>
+              <td>Öğrenim Seviyesi:</td>
+              <td>Lise</td>            
+            </tr>  
+            <tr>
+              <td></td>
+              <td>Okuduğu Bölüm:</td>
+              <td>Bilgisayar Müh.</td>            
+            </tr>       
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

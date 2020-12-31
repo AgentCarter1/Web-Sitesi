@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="Hakkımda.html">
+  <link rel="stylesheet" type="text/css" href="Memleketim.html">
+  <link rel="stylesheet" type="text/css" href="Home.html">
+  <title>Anasayfa</title>
+</head>
+<body>
+  <br><br><br><br><br>
+  <center><img src="logo.png" width="1100"></center>
+  <br><br><br><br><br><br><br><br><br><br>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <center><img class="img-fluid" width="200" src="soruisareti.png"></center>
+          <div class="card-body">
+            <h4 class="card-title">Ben Kimim?</h4>
+            <p class="card-text">Ben izmirde 2000 yılında konakta doğdum. 20 yaşındayım 2006 senesinde anaokuluna başladım böbrek rahatsızlığımdan dolayı bırakmak zorunda kaldım sonra ilkokula başladım 8. sınıfa kadar Melih Tunçay İlkokulunda okudum ancak ben okurken... </p>
+            <a href="http://localhost/Proje/Hakk%c4%b1mda.html" class="btn btn-success">Devam Etmek İçin..</a>
+          </div>          
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <center><img class="img-fluid" width="320" src="trabzon.jpg"></center>
+          <div class="card-body">
+            <h4 class="card-title">Memleketim</h4>
+            <p class="card-text">Trabzon Türkiye'nin bir ili ve en kalabalık yirmi yedinci şehridir. Trabzon İl Nüfusu: 808.974'dur. Karadeniz Bölgesi'nin Doğu Karadeniz Bölümü'nde yer alan ilin Karadeniz'e kıyısı bulunur. Karadeniz sahili ile Doğu Karadeniz Dağları arasında  ... </p>
+            <a href="http://localhost/Proje/Memleketim.html" class="btn btn-success">Devam Etmek İçin..</a>
+          </div>          
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <center><img class="img-fluid" width="200" src="Trabzonspor.png"></center>
+          <div class="card-body">
+            <h4 class="card-title">Takımımız</h4>
+            <p class="card-text">Trabzonspor Futbol Takımı, 2 Ağustos 1967'de kurulan Trabzonspor Kulübü'nün profesyonel futbol takımı. Renkleri kulübün tüm branşlarda ortak olarak kullandığı, Koyu bordo ve açık mavidirTrabzonspor Futbol Takımı.. </p>
+            <a href="https://www.trabzonspor.org.tr/tr" class="btn btn-success">Devem Etmek İçin..</a>
+          </div>          
+        </div>
+      </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-bottom ">
+      <div class="container">
+        <a href="Home.html" class="navbar-brand"> <strong> Kişisel Blog </strong></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuac">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuac">
+          <ul class="navbar-nav ">
+            <li class="nav-item active">
+              <a href="Home.html " class="nav-link">AnaSayfa</a>
+            </li>
+            <li class="nav-item">
+              <a href="Hakkımda.html" class="nav-link">Hakkımda</a>
+            </li >
+            <li class="nav-item">
+              <a href="Memleketim.html" class="nav-link">Memleketim</a>
+            </li>  
+            <li class="nav-item">
+              <a href="iletisim.html" class="nav-link">İletişim</a>
+            </li>                    
+          </ul>
+          <form action="Home.html"  class="form-inline ml-auto" name="form" id="form">
+            <p class="mr-2 my-1">Kullanıcı Bilgileri:</p>
+            <input type="text" class="info form-control my-1 mr-2" name="id" id="id" value="">
+            <input type="password" class="form-control mr-2 info" name="sifre" id="sifre" value="">
+            <button type="button" onclick="giris()"  class="btn btn-dark my-2 my-sm-0" id="Btn">Giriş</button>
+          </form>
+        </div>
+      </div>
+
+    </nav>
+
+    <script type="text/javascript">
+      function giris()
+      {
+        var kullanıcı_adı="b191210080";
+        var kullanıcı_sifre="123";
+        var alınan_kullanıcı_adı = document.getElementById("id").value;
+        var alınan_sifre = document.getElementById("sifre").value;
+        if(kullanıcı_adı==alınan_kullanıcı_adı&&kullanıcı_sifre==alınan_sifre)
+        {
+          alert("Hoşgeldin b191210080");
+          window.location = "Home.html";
+        }
+        else
+        {
+          alert("Girilen Bilgiler Hatalıdır.");
+        }
+      }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
