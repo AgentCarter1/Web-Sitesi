@@ -1,0 +1,908 @@
+:root {
+    --maincolor: rgb(17, 68, 162);
+    --secondcolor: rgb(236, 236, 236);
+    --thirdcolor: #242424;
+    --fourthcolor: rgb(97, 97, 97);
+}
+
+/* rgb(26, 55, 109); */
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: 0.2ms;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    color: var(--thirdcolor);
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: var(--secondcolor);
+}
+
+
+/* Navigasyon */
+
+
+.nav1 {
+    top: 80px;
+    z-index: 2;
+    width: 100%;
+    position: fixed;
+    /* background-color: rgba(218, 218, 218, 0.301); */
+    justify-content: space-around;
+    height: 25px;
+}
+
+.nav1 a {
+    float: right;
+    padding-top: 2px;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 14px;
+    color: var(--maincolor);
+}
+
+
+.nav1 a:nth-child(1) {
+    margin-right: 14%;
+}
+
+nav {
+    transition: 0.5s;
+    font-size: 16px;
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav>a {
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--maincolor);
+}
+
+.navlinks {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+
+.navlinks li a {
+    color: var(--maincolor);
+}
+
+.fas {
+    font-size: 20px;
+}
+
+.navlinks li i {
+    color: var(--maincolor);
+}
+
+.nav1 i {
+    color: var(--maincolor);
+}
+
+.navlinks>li {
+    padding: 0px 5px;
+    line-height: 80px;
+    transition: 0.3s;
+    list-style: none;
+}
+
+.navlinks>li:hover {
+    border-bottom: solid 1px var(--maincolor);
+    background-color: #3787ff15;
+}
+
+.scrolling-active nav {
+    background-color: var(--maincolor);
+    opacity: 0.9;
+}
+
+.scrolling-active .nav1 {
+    display: none;
+}
+
+.scrolling-active nav a {
+    color: var(--secondcolor);
+}
+
+.scrolling-active .navlinks li i {
+    color: var(--secondcolor);
+}
+
+.scrolling-active .fa-bars {
+    color: var(--secondcolor);
+}
+
+.active {
+    border-bottom: solid 1px var(--maincolor);
+    background-color: #3787ff2a;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    margin-right: 5%;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+/* Navigasyon */
+
+.liste {
+    list-style: disc;
+}
+
+.liste>li {
+    padding: 3px;
+}
+
+
+/* Loader */
+
+
+.loader-wrapper {
+    z-index: 4;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--maincolor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    border: 4px solid #Fff;
+    animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    background-color: #fff;
+    animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(180deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loader-inner {
+    0% {
+        height: 0%;
+    }
+
+    25% {
+        height: 0%;
+    }
+
+    50% {
+        height: 100%;
+    }
+
+    75% {
+        height: 100%;
+    }
+
+    100% {
+        height: 0%;
+    }
+}
+
+
+/* Loader */
+
+
+.alan {
+    display: block;
+    background-color: rgb(194, 194, 194);
+    height: 100%;
+}
+
+.arkaplan {
+    z-index: 1;
+    display: block;
+    height: 100%;
+    background-color: var(--secondcolor);
+    overflow: hidden;
+    box-shadow: 0px 0px 50px -10px #000000;
+}
+
+.bos {
+    height: 120px;
+    display: block;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    object-fit: fill;
+    filter: brightness(1.1);
+    filter: saturate(1.8);
+    filter: drop-shadow(2);
+}
+
+
+
+
+.yazi {
+    transition: 1s;
+    color: var(--thirdcolor);
+    width: 30%;
+    position: absolute;
+    z-index: 2;
+    top: 40%;
+    left: 10%;
+}
+
+.swiper-container {
+    width: 80%;
+}
+
+.container {
+    padding: 40px 0 0 40px;
+    margin: auto;
+    display: block;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+
+/* Scrollbar */
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--secondcolor);
+}
+
+::-webkit-scrollbar-track:hover :-webkit-scrollbar-thumb {
+    background: var(--maincolor);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondcolor);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--maincolor);
+}
+
+
+/* Scrollbar */
+
+
+/* Markalar */
+
+.marka {
+    cursor: pointer;
+    opacity: 0.5;
+    height: auto;
+    width: 120px;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.marka:hover {
+    opacity: 1;
+}
+
+.center {
+    margin: auto;
+}
+
+/* Markalar */
+
+
+#section1 {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+
+#section2 {
+    display: block;
+}
+
+#section3 {
+    padding: 10px 0 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#section4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+footer {
+    margin-top: 20px;
+    bottom: 0px;
+    margin-top: auto;
+    width: 100%;
+    background-color: var(--maincolor);
+    height: auto;
+}
+
+.genislik{
+    position: relative;
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.footer {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 15px;
+}
+
+.web {
+    position: absolute;
+    opacity: 0.1;
+    transform: translateX(20px) translateY(15px);
+}
+
+.f1,
+.f2,
+.f3 {
+    color: var(--secondcolor);
+}
+
+.f2 {
+    transform: translateY(15px);
+}
+
+.sol {
+    text-decoration: none;
+}
+
+p {
+    padding: 0 20px;
+}
+
+button {
+    box-shadow: 0px 22px 23px -18px var(--maincolor);
+    background-color: var(--maincolor);
+    border-radius: 3px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 16px;
+    padding: 15px 50px;
+    text-decoration: none;
+    border-color: transparent;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: var(--thirdcolor);
+    box-shadow: 0px 22px 23px -18px var(--thirdcolor)
+}
+
+.kutu {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    align-items: center;
+}
+
+.kutu i {
+    font-size: 50px;
+}
+
+.kutu:hover h3,
+.kutu:hover i {
+    color: var(--maincolor);
+    transition: 0.4s;
+}
+
+
+.uyari {
+    padding: 0px;
+    display: flex;
+    background-color: rgb(218, 61, 61);
+    align-items: center;
+    transition: 0.4s;
+}
+
+.uyari i {
+    font-size: 30px;
+    padding-left: 20px;
+    color: var(--secondcolor);
+}
+
+.uyari span {
+    color: rgb(223, 162, 155);
+    display: inline;
+}
+
+.uyari:hover {
+    background-color: rgb(197, 48, 48);
+}
+
+
+/* Form */
+
+.form-group {
+    margin-bottom: 20px;
+    display: block;
+}
+
+label {
+    display: block;
+}
+
+h4 {
+    color: #48419b;
+    margin: 0 0 0 0;
+}
+
+.form-control {
+    display: block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    padding: 7px 12px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+}
+
+.btn {
+    width: 90%;
+    padding: 8px 22px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: var(--maincolor);
+    border: 1px solid #48419b;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0069d9;
+    border: 1px solid #0062cc;
+}
+
+/* Form */
+
+.iletisim {
+    display: flex;
+}
+
+.sag {
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Ülkeler */
+
+.ulkesection {
+    position: relative;
+}
+
+.ulkeler {
+    position: relative;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.ulkeler:hover {
+    background: red;
+}
+
+.ulke {
+    position: absolute;
+    top: 8px;
+    left: 65px;
+}
+
+.ulkeicon {
+    width: 54px;
+}
+
+.bg:hover {
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 33.3%, #00b26a 33.3%, #00b26a 67.7%, #ff0000 67.7%, #ff0000 100%);
+}
+
+.gr:hover {
+    background: linear-gradient(to bottom, #0066fb 0%, #0066fb 11.111%, #ffffff 11.111%, #ffffff 23%, #0066fb 23%, #0066fb 34%, #ffffff 34%, #ffffff 45%, #0066fb 45%, #0066fb 56.22%, #ffffff 56.22%, #ffffff 67.77%, #0066fb 67.77%, #0066fb 78.88%, #ffffff 78.88%, #ffffff 89.99%, #0066fb 89.99%, #0066fb 90%, #0066fb 100%);
+}
+
+.mk:hover {
+    background: linear-gradient(to bottom, #ff0000 0%, #ff0000 40.5%, #ffef00 40.5%, #ffef00 61%, #ff0000 61%, #ff0000 100%);
+}
+
+.me:hover {
+    background: #f1ae00;
+}
+
+.rs:hover {
+    background: linear-gradient(to bottom, #ff1d28 0%, #ff1d28 33.3%, #0046a7 33.3%, #0046a7 67.7%, #ffffff 67.7%, #ffffff 100%);
+}
+
+.ba:hover {
+    background: #0000ff;
+}
+
+.hr:hover {
+    background: linear-gradient(to bottom, #ff000d 0%, #ff000d 33.3%, #ffffff 33.3%, #ffffff 67.7%, #1010f4 67.7%, #1010f4 100%);
+}
+
+.hu:hover {
+    background: linear-gradient(to bottom, #ff000d 0%, #ff000d 33.3%, #ffffff 33.3%, #ffffff 67.2%, #0ba400 67.2%, #0ba400 100%);
+}
+
+.dk:hover {
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 33.3%, #0055ec 33.3%, #0055ec 67.7%, #ff000d 67.7%, #ff000d 100%);
+}
+
+.cz:hover {
+    background: linear-gradient(to bottom, #ffffff 0%, #ffffff 50%, #ff000d 50%, #ff000d 100%);
+
+}
+
+/* Ülkeler */
+
+.main {
+    position: absolute;
+    z-index: 2;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.main4 {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.main5 {
+    width: 100%;
+    filter: blur(8px);
+}
+
+.map {
+    margin: auto;
+    height: 40vh;
+    width: auto;
+}
+
+
+/* Mobil Uyumluluk */
+
+@media only screen and (max-width: 1500px) {
+
+    .arkaplan img {
+        width: auto;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+
+    .navlinks>li {
+        padding: 0px;
+    }
+
+    .main5 {
+        filter: blur(50px);
+    }
+
+    .main5 div div img {
+        height: 100%;
+        width: auto;
+    }
+
+}
+
+@media only screen and (max-width: 1260px) {
+    .navlinks>li {
+        padding: 0px;
+    }
+
+    .navlinks {
+        width: 50%;
+    }
+
+    .marka {
+        width: 80px;
+    }
+
+    .container {
+        width: 95%;
+    }
+
+}
+
+@media only screen and (max-width: 1030px) {
+
+
+    .arkaplan img {
+        left:50%;
+        margin-left:-50%;
+    }
+
+    .main3 a img {
+        margin: 0px;
+        height: 150px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .checkbtn {
+        position: fixed;
+        display: block;
+        right: 0px;
+        z-index: 4;
+    }
+
+    #check:checked~ul {
+        left: 0px;
+    }
+
+    #check:checked~.checkbtn {
+        z-index: 2;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    .navlinks {
+        position: fixed;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-color: var(--maincolor);
+        opacity: 0.9;
+        top: 67px;
+        left: +100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 2;
+        padding: 0px;
+    }
+
+    .navlinks li {
+        margin-top: 0px;
+        height: 12%;
+    }
+
+    .navlinks li a {
+        font-size: 20px;
+        color: var(--secondcolor);
+    }
+
+    .navlinks li i {
+        color: var(--secondcolor);
+    }
+
+    .fa-bars {
+        color: var(--maincolor);
+    }
+
+    .web {
+        display: none;
+    }
+
+    .bos {
+        height: 60px;
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+    .sol {
+        display: block;
+    }
+    
+    #section4{
+        display: block;
+    }
+
+    .map {
+        margin: auto;
+        width: 100%;
+        height: 30%;
+        padding: 10px;
+    }
+
+    .container {
+        padding: 0px;
+    }
+
+    .sol iframe {
+        margin-top: 10px;
+    }
+
+    #form1 {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .form-control {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .sag~div {
+        padding: 0px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+
+    .arkaplan img {
+        left:60%;
+        margin-left:-60%;
+    }
+
+    .marka {
+        width: 50px;
+    }
+
+    .arkaplan {
+        width: 100%;
+    }
+
+    .kutu {
+        font-size: 10px;
+    }
+    
+    .kutu i {
+        font-size: 30px;
+    }
+
+    .ulkesection {
+        display: block;
+        padding: 0px 10px;
+    }
+
+    #section1 {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+
+    .main3 a img {
+        margin: 0px;
+        height: 100px;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .main5 {
+        height: 100%;
+        width: auto;
+    }
+
+    .arkaplan img {
+        left: 100%;
+        margin-left: -100%;
+    }
+
+    .marka {
+        width: 40px;
+    }
+
+    footer {
+        display: none;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0px;
+    }
+
+    #section3 {
+        padding: 0px 5px;
+    }
+
+    h1, h2, h3 {
+        text-align: center;
+    }
+    
+    .nav1 {
+        display: none;
+    }
+
+    .uyari {
+        flex-direction: column;
+    }
+
+    .uyari i {
+        padding-top: 20px;
+    }
+
+    .yazi {
+        padding: 20px;
+        left: 0px;
+        top: 30%;
+        width: 100%;
+    }
+
+    .yazi button {
+        width: 100%;
+    }
+
+    #section2 ul {
+        padding: 20px;
+    }
+
+    .swiper-container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .arkaplan img {
+        left: 150%;
+        margin-left: -150%;
+    }
+    
+}

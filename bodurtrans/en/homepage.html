@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <meta
+      name="description"
+      content="İzmir ve Ege bölgesinden tüm Balkan ülkelerine grupaj ve komple karayolu taşımacılığında 2000 yılından bu yana taşıma hizmeti vermektedir.."
+    />
+    <meta
+      name="keywords"
+      content="bodur trans, bodur, izmir romanya nakliye,
+izmir bulgaristan nakliye, izmir yunanistan nakliye, İzmir Yunanistan nakliye,
+uluslararası, parsiyel, Групаж от Измир,Товар от Измир , Транспорт от Измир,Grupaj bulgaristan,Grupaj makedonya, Grupaj romanya,Manisa bulgaristan nakliye,
+İzmir grupaj,Denizli grupaj bulgaristan,İzmir sofya ,İzmir Atina,İzmir Budapeşte,İzmir hungary transport,İzmir Macaristan nakliye"
+    />
+    <script
+      src="https://kit.fontawesome.com/e7835b23c4.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../style.css?version=51" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <title>Bodur Trans</title>
+
+    <script>
+      $(window).on("load", function () {
+        $(".loader-wrapper").fadeOut("slow");
+      });
+    </script>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        let body = document.querySelector("body");
+        let windowPosition = window.scrollY > 0;
+        body.classList.toggle("scrolling-active", windowPosition);
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="loader-wrapper">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <div class="nav1">
+      <a href="callto:090 232 351 2726"
+        ><i class="fas fa-phone"></i> +90 232 351 2726</a
+      >
+      <a href="mailto:info@bodurtrans.com">
+        <i class="fas fa-envelope"></i> info@bodurtrans.com</a
+      >
+    </div>
+
+    <nav>
+      <a style="cursor: pointer">Bodur Trans</a>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul class="navlinks">
+        <li class="active">
+          <a>Home Page</a>
+        </li>
+        <li>
+          <a href="about-us.html">About Us</a>
+        </li>
+        <li>
+          <a href="our-fleet.html">Our Fleet</a>
+        </li>
+        <li>
+          <a href="our-services.html">Our services</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a id="resetButton" href="../index.html"
+            ><i class="fas fa-globe-europe"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="arkaplan">
+      <div class="yazi">
+        <h1>INTERNATIONAL ROAD TRANSPORT</h1>
+        <p style="color: black; text-shadow: var(--secondcolor) 0px 0px 5px">
+          Part of your quality.
+        </p>
+        <button onclick="window.location.href='our-services.html'">
+          Our Services
+        </button>
+      </div>
+      <img src="../images/11.jpg" alt="Arkaplan" />
+    </div>
+
+    <script>
+      const resetButton = document.querySelector("#resetButton");
+      const resetButtonListener = () => {
+        localStorage.clear();
+      };
+      resetButton.addEventListener("click", resetButtonListener);
+    </script>
+  </body>
+</html>
