@@ -279,7 +279,7 @@ img {
     left: 10%;
 }
 
-.swiper-container {
+.swiper {
     width: 80%;
 }
 
@@ -894,7 +894,7 @@ h4 {
         padding: 20px;
     }
 
-    .swiper-container {
+    .swiper {
         width: 100%;
     }
 }
